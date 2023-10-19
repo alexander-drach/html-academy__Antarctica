@@ -1,0 +1,84 @@
+.booking {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bg/booking-bg-desktop.png");
+
+  @include vp-1023 {
+    background-image: url("../img/bg/booking-bg-tablet.png");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/bg/booking-bg-mobile.png");
+  }
+}
+
+.booking h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.booking__inner {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
+}
+
+.booking__text {
+  flex: 1;
+  margin-right: 144px;
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+}
+
+.booking__desc {
+  max-width: 352px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include vp-1023 {
+    text-align: center;
+
+    margin-bottom: 60px;
+  }
+}
+
+.booking__desc p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.booking__btn {
+  width: 100%;
+}

@@ -1,0 +1,25 @@
+.logo {
+  flex-shrink: 0;
+
+  &--header {
+    margin-right: auto;
+  }
+
+  &--footer {
+    margin-right: 40px;
+  }
+}
+
+.logo svg {
+  fill: $color-primary-white;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+}

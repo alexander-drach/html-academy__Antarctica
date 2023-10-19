@@ -1,0 +1,19 @@
+.hamb {
+  display: none;
+
+  background-color: $color-transparent;
+  padding: 0;
+  width: 24px;
+  height: 12px;
+  border: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(../img/sprite.svg#icon-hamb);
+    background-size: cover;
+  }
+}

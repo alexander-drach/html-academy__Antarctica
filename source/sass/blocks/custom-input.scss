@@ -1,52 +1,38 @@
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
 
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  margin-bottom: 20px;
 
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
+  input {
+    padding: 11px 16px;
     width: 100%;
-  }
 
-  label {
-    display: flex;
-    align-items: center;
-    width: 100%;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: $color-primary-black;
+
+    border: none;
+    outline: none;
+
+    transition: border 0.3s ease;
 
     @media screen and (max-width: 767px) {
-      align-items: flex-start;
-      flex-direction: column;
+      max-width: unset;
+      width: 100%;
     }
 
-    input,
-    textarea {
-      flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
+    &:hover {
+      outline: 2px solid $color-primary-blue;
+    }
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
-      outline: none;
+    &:focus {
+      outline: 2px solid $color-primary-blue;
+    }
 
-      transition: border 0.3s ease;
-
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
-      }
-
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
-
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
+    &::placeholder {
+      color: rgba(1, 28, 64, 0.70);
     }
   }
 
@@ -60,8 +46,7 @@
     position: absolute;
     right: 0;
     bottom: 35px;
-
-    color: #ff1553;
+    color: $color-primary-red;
 
     opacity: 0;
 
@@ -73,13 +58,13 @@
   }
 
   &.is-invalid {
-    input,
-    textarea {
-      border: 2px solid #ff1553;
+
+    input {
+      outline: 2px solid $color-primary-red;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        outline: 2px solid $color-primary-red;
       }
     }
   }

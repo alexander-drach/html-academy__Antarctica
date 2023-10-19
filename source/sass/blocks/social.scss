@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 27px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include hover-focus {
+    svg {
+      fill: $color-primary-blue;
+    }
+  }
+}
+
+.social__item svg {
+  fill: $color-primary-white;
+
+  transition: fill $trans-default;
+}

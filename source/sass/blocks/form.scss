@@ -1,0 +1,25 @@
+.form {
+  flex-shrink: 0;
+
+  width: 403px;
+  background-color: $color-primary-black;
+  padding: 50px;
+}
+
+.form__desc {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: $color-primary-white;
+
+  margin-bottom: 35px;
+}
+
+.form__desc p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

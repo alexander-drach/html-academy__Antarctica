@@ -1,0 +1,99 @@
+.intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/bg/intro-bg-desktop.png);
+  background-color: #2e5e98;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @supports (background-image: url("../img/bg/intro-bg-desktop.webp")) {
+    background-image: url("../img/bg/intro-bg-desktop.webp");
+  }
+
+  @include vp-1023 {
+    background-image: url(../img/bg/intro-bg-tablet.png);
+
+    box-shadow: none;
+
+    @supports (background-image: url("../img/bg/intro-bg-tablet.webp")) {
+      background-image: url("../img/bg/intro-bg-tablet.webp");
+    }
+  }
+
+  @include vp-767 {
+    background-image: url(../img/bg/intro-bg-mobile.png);
+
+    @supports (background-image: url("../img/bg/intro-bg-mobile.webp")) {
+      background-image: url("../img/bg/intro-bg-mobile.webp");
+    }
+  }
+}
+
+.intro__inner {
+  padding-top: 175px;
+  padding-bottom: 283px;
+  padding-left: 95px;
+
+  @include vp-1023 {
+    padding-left: 0;
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+
+  @include vp-767 {
+    padding-top: 143px;
+    padding-bottom: 185px;
+  }
+}
+
+.intro h1 {
+  color: $color-primary-white;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    font-size: 50px;
+    text-shadow: none;
+
+    margin-bottom: 29px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 125%;
+
+    margin-bottom: 25px;
+  }
+}
+
+.intro__desc {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $color-primary-white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
+.intro__desc p {
+  margin-top: 0;
+}
+
+.intro__desc p:last-child {
+  margin-bottom: 0;
+}

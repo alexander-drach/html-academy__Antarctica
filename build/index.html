@@ -1,30 +1,230 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Туристический проект Круизы в Антарктику ">
-    <title>Круизы в Антарктику</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__inner"></div>
-        </div>
-      </header>
-      <main>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer__inner"></div>
-        </div>
-      </footer>
-    </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Туристический проект Круизы в Антарктику ">
+  <title>Круизы в Антарктику</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="intro">
+      <div class="container">
+        <header class="header">
+          <div class="header__inner">
+            <a class="logo logo--header" href="#">
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <nav class="nav">
+              <ul class="menu menu--header">
+                <li class="menu__item">
+                  <a class="menu__link" href="#features">Преимущества</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Направления</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#cruises">Ближайшие круизы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#contact">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="hamb" type="button"><span class="visually-hidden">Открыть / Закрыть меню</span></button>
+          </div><!-- header__inner -->
+        </header>
+        <div class="intro__inner">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <div class="intro__desc">
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+          </div>
+        </div>
+      </div><!-- container -->
+    </section>
+
+    <main>
+      <section class="adventure">
+        <div class="container">
+          <div class="aventure__inner">
+            <div class="adventure__text">
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <div class="adventure__desc">
+                <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+                  круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги,
+                  несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+              </div>
+            </div>
+            <div class="adventure__img">
+              <picture>
+                <source type="image/webp" srcset="img/adventure-mobile.webp 1x, img/adventure-mobile@2x.webp 2x"
+                  media="(max-width: 767px)" />
+                <source type="image/webp" srcset="img/adventure-tablet.webp 1x, img/adventure-tablet@2x.webp 2x"
+                  media="(max-width: 1023px)" />
+
+                <source type="image/png" srcset="img/adventure-mobile.png 1x, img/adventure-mobile@2x.png 2x"
+                  media="(max-width: 767px)" />
+                <source type="image/png" srcset="img/adventure-tablet.png 1x, img/adventure-tablet@2x.png 2x"
+                  media="(max-width: 1023px)" />
+
+                <img width="560" height="301" class="services__thumb" src="img/adventure-desktop.png"
+                  srcset="img/adventure-desktop@2x.png" alt="три пингвина на снегу" />
+              </picture>
+            </div>
+          </div><!-- aventure__inner -->
+        </div>
+      </section><!-- adventure -->
+
+      <section id="features" class="features">
+        <div class="container">
+          <div class="features__inner">
+            <h2>Преимущества</h2>
+            <ul class="features__list">
+              <li class="features__item features__item--cruise-ship">
+                <svg width="27" height="32">
+                  <use xlink:href="img/sprite.svg#icon-cruise-ship"></use>
+                </svg>
+                <h3>Небольшой круизный лайнер</h3>
+                <div class="features__desc">
+                  <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума
+                    и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+                </div>
+              </li>
+              <li class="features__item features__item--all-inclusive">
+                <svg width="38" height="32">
+                  <use xlink:href="img/sprite.svg#icon-all-inclusive"></use>
+                </svg>
+                <h3>Система все включено</h3>
+                <div class="features__desc">
+                  <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+                    и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+                </div>
+              </li>
+              <li class="features__item features__item--zodiac">
+                <svg width="44" height="32">
+                  <use xlink:href="img/sprite.svg#icon-zodiac"></use>
+                </svg>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <div class="features__desc">
+                  <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                    c&nbsp;опытными экскурсоводами.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- features -->
+
+      <section id="cruises" class="cruises">
+        <div class="container">
+          <div class="cruises__inner">
+            <h2>Ближайшие круизы</h2>
+            <ul class="cruises__list">
+              <li class="cruises__item">
+                <article class="card">
+
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- cruises -->
+
+      <section class="booking">
+        <div class="container">
+          <div class="booking__inner">
+            <div class="booking__text">
+              <h2>Раннее бронирование</h2>
+              <div class="booking__desc">
+                <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+              </div>
+            </div>
+            <div class="form">
+              <div class="form__desc">
+                <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+              </div>
+              <form>
+                <div class="custom-input" data-validate-type="text" data-limitation="name">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input id="name" name="name" type="text" placeholder="Имя" required autofocus minlength="2">
+                </div>
+
+                <div class="custom-input" data-validate-type="phone">
+                  <label class="visually-hidden" for="tel">Телефон</label>
+                  <input id="tel" name="tel" type="tel" placeholder="Телефон">
+                </div>
+
+                <div class="custom-input" data-validate-type="email">
+                  <label class="visually-hidden" for="tel">email</label>
+                  <input id="email" name="email" type="email" placeholder="Email">
+                </div>
+
+                <div class="custom-toggle custom-toggle--checkbox">
+                  <input id="agree" type="checkbox" name="agree">
+                  <span class="custom-toggle__icon"></span>
+                  <label for="agree">Я согласен на обработку моих персональных данных</label>
+                </div>
+
+                <button class="btn btn-white booking__btn">Оставить заявку</button>
+              </form>
+            </div>
+          </div><!-- booking__inner -->
+        </div>
+      </section><!-- booking -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo logo--footer" href="#">
+            <svg width="70" height="38">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="menu menu--footer">
+            <li class="menu__item">
+              <a class="menu__link" href="#features">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Направления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#cruises">Ближайшие круизы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+          <div class="social">
+            <a class="social__item" href="#">
+              <svg width="12" height="20">
+                <use xlink:href="img/sprite.svg#icon-social-ok"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-social-yandex"></use>
+              </svg>
+            </a>
+            <a class="social__item" href="#">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-social-reddit"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
