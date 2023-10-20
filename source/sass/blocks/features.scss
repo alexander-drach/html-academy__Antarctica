@@ -30,7 +30,7 @@
   padding-bottom: 119px;
 
   @include vp-1023 {
-    padding-top: 100px;
+    padding-top: 91px;
     padding-bottom: 100px;
   }
 
@@ -52,6 +52,7 @@
 
   @include vp-1023 {
     font-size: 26px;
+    margin-bottom: 49px;
   }
 
   @include vp-767 {
@@ -70,7 +71,9 @@
   padding-left: 0;
   margin: 0;
 
-  @include vp-1023 {}
+  @include vp-1023 {
+    gap: 30px;
+  }
 
   @include vp-767 {
     grid-template-columns: repeat(1, 1fr);
@@ -84,11 +87,11 @@
   padding: 30px 30px 47px 30px;
 
   @include vp-1023 {
-    padding: 26px 20px 25px 20px;
+    padding: 26px 15px 21px 20px;
   }
 
   @include vp-767 {
-    padding: 25px 20px 25px 20px;
+    padding: 25px 20px 21px 15px;
   }
 }
 
@@ -96,7 +99,7 @@
   margin-bottom: 9px;
 
   @include vp-1023 {
-    margin-bottom: 24px;
+    margin-bottom: 13px;
   }
 
   @include vp-767 {
@@ -132,5 +135,38 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.features__item--cruise-ship svg {
+  @include vp-1023 {
+    width: 21px;
+    height: 26px;
+  }
+
+  @include vp-767 {}
+}
+
+.features__item--all-inclusive svg {
+  @include vp-1023 {
+    width: 27px;
+    height: 26px;
+  }
+
+  @include vp-767 {}
+}
+
+.features__item--zodiac svg {
+  @include vp-1023 {
+    width: 36px;
+    height: 26px;
+  }
+
+  @include vp-767 {}
+}
+
+.features__item--zodiac h3 {
+  @include vp-1023 {
+    margin-bottom: 20px;
   }
 }
