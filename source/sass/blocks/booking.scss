@@ -19,7 +19,7 @@
   line-height: 150%;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
 
   @include vp-1023 {
     text-align: center;
@@ -45,7 +45,9 @@
 
 .booking__text {
   flex: 1;
+
   margin-right: 144px;
+  margin-bottom: 10px;
 
   @include vp-1023 {
     display: flex;
@@ -84,4 +86,6 @@
 
 .booking__btn {
   width: 100%;
+
+  padding: 14px 20px 10px;
 }

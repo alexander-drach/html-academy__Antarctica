@@ -3,7 +3,7 @@
 
   width: 403px;
   background-color: $color-primary-black;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
 
   @include vp-767 {
     width: 100%;
@@ -17,7 +17,7 @@
   line-height: 150%;
   color: $color-primary-white;
 
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .form__desc p {

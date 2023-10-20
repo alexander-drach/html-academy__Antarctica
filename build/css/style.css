@@ -685,7 +685,8 @@ button,
   line-height: 130%;
   color: #f9fbfd;
   width: 100%;
-  margin-bottom: 35px;
+  margin-top: 23px;
+  margin-bottom: 33px;
 }
 .custom-toggle input {
   position: absolute;
@@ -1417,7 +1418,7 @@ button,
   font-weight: 700;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
 }
 @media (max-width: 1023px) {
   .booking h2 {
@@ -1454,6 +1455,7 @@ button,
       -ms-flex: 1;
           flex: 1;
   margin-right: 144px;
+  margin-bottom: 10px;
 }
 @media (max-width: 1023px) {
   .booking__text {
@@ -1499,6 +1501,7 @@ button,
 
 .booking__btn {
   width: 100%;
+  padding: 14px 20px 10px;
 }
 
 .contact__inner {
@@ -1579,7 +1582,7 @@ button,
       flex-shrink: 0;
   width: 403px;
   background-color: #011c40;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
 }
 @media (max-width: 767px) {
   .form {
@@ -1593,7 +1596,7 @@ button,
   font-weight: 500;
   line-height: 150%;
   color: #f9fbfd;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .form__desc p {
