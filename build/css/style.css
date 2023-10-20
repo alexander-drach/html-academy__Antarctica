@@ -851,6 +851,10 @@ button,
   color: #00b2ff;
 }
 
+.menu--header {
+  margin-bottom: 4px;
+}
+
 .menu--footer {
   margin-right: auto;
 }
@@ -1510,6 +1514,10 @@ button,
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.contact iframe {
+  border: none;
 }
 
 .footer {
