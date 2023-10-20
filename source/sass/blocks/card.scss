@@ -26,6 +26,11 @@
   position: absolute;
   left: 30px;
   bottom: 22px;
+
+  @include vp-1023 {
+    left: 35px;
+    bottom: 26px;
+  }
 }
 
 .card__preview img {
@@ -44,6 +49,10 @@
 
   overflow-y: auto;
   padding: 28px 25px 35px 27px;
+
+  @include vp-1023 {
+    padding: 28px 34px 35px 35px;
+  }
 }
 
 .card h3 {
@@ -91,8 +100,14 @@
 .card__btn {
   width: 100%;
 
+  font-size: 14px;
+
   padding: 9px 20px 7px;
   margin-top: 27px;
+
+  @include vp-1023 {
+    margin-top: 25px;
+  }
 }
 
 .card {
@@ -101,5 +116,17 @@
       opacity: 0;
       pointer-events: none;
     }
+  }
+}
+
+.card__chapter--port h4 {
+  @include vp-1023 {
+    margin-bottom: 2px;
+  }
+}
+
+.card__chapter--duration h4 {
+  @include vp-1023 {
+    margin-bottom: 2px;
   }
 }
