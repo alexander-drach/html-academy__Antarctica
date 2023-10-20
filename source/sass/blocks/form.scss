@@ -18,6 +18,10 @@
   color: $color-primary-white;
 
   margin-bottom: 26px;
+
+  @include vp-1023 {
+    margin-bottom: 28px;
+  }
 }
 
 .form__desc p {

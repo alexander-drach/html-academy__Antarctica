@@ -12,6 +12,10 @@
   margin-top: 23px;
   margin-bottom: 33px;
 
+  @include vp-1023 {
+    margin-bottom: 31px;
+  }
+
   input {
     position: absolute;
 

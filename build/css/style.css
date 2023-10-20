@@ -568,6 +568,7 @@ button,
   text-align: center;
   font-weight: 600;
   color: #011c40;
+  font-size: 14px;
   padding: 14px 20px 15px 20px;
   background-color: #f9fbfd;
   border: none;
@@ -687,6 +688,11 @@ button,
   width: 100%;
   margin-top: 23px;
   margin-bottom: 33px;
+}
+@media (max-width: 1023px) {
+  .custom-toggle {
+    margin-bottom: 31px;
+  }
 }
 .custom-toggle input {
   position: absolute;
@@ -1444,7 +1450,6 @@ button,
 
 .card__btn {
   width: 100%;
-  font-size: 14px;
   padding: 9px 20px 7px;
   margin-top: 27px;
 }
@@ -1503,8 +1508,9 @@ button,
 }
 @media (max-width: 1023px) {
   .booking h2 {
+    font-size: 34px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 }
 
@@ -1526,6 +1532,8 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 88px;
+    padding-bottom: 100px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1551,6 +1559,7 @@ button,
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-bottom: -8px;
   }
 }
 @media (max-width: 1023px) {
@@ -1583,6 +1592,11 @@ button,
 .booking__btn {
   width: 100%;
   padding: 14px 20px 10px;
+}
+@media (max-width: 1023px) {
+  .booking__btn {
+    padding: 14px 20px 13px;
+  }
 }
 
 .contact__inner {
@@ -1725,6 +1739,11 @@ button,
   line-height: 150%;
   color: #f9fbfd;
   margin-bottom: 26px;
+}
+@media (max-width: 1023px) {
+  .form__desc {
+    margin-bottom: 28px;
+  }
 }
 
 .form__desc p {
