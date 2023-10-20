@@ -1,0 +1,18 @@
+
+.contact__inner {
+  display: flex;
+  align-items: center;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contact__map {
+  width: 560px;
+  flex-shrink: 0;
+  margin-right: 100px;
+}
+
+.contact__content {
+  flex: 1;
+}
