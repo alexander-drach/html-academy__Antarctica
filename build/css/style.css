@@ -936,8 +936,8 @@ button,
 @media (max-width: 1023px) {
   .intro__inner {
     padding-left: 0;
-    padding-top: 200px;
-    padding-bottom: 280px;
+    padding-top: 175px;
+    padding-bottom: 274px;
   }
 }
 @media (max-width: 767px) {
@@ -961,7 +961,7 @@ button,
   .intro h1 {
     font-size: 50px;
     text-shadow: none;
-    margin-bottom: 29px;
+    margin-bottom: 12px;
   }
 }
 @media (max-width: 767px) {
