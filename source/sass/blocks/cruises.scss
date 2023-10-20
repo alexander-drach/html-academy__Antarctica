@@ -5,7 +5,8 @@
   font-weight: 600;
   line-height: 150%;
 
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 49px;
 
   @include vp-1023 {
     font-size: 26px;
@@ -17,10 +18,15 @@
 }
 
 .cruises__inner {
-  padding-top: 95px;
+  padding-top: 85px;
   padding-bottom: 120px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @include vp-767 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .cruises__list {

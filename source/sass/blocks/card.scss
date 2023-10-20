@@ -15,41 +15,34 @@
 }
 
 .card__preview {
+  position: relative;
   display: flex;
   align-items: flex-end;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-
-  z-index: 10;
-
-  overflow: hidden;
-
-  transition: opacity $trans-default;
+  z-index: 2;
+  background-color: $color-primary-blue;
 }
 
 .card__preview h3 {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  left: 30px;
+  bottom: 22px;
 }
 
 .card__preview img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-
-  max-width: none;
-  width: auto;
-  height: 100%;
-  object-fit: cover;
+  @include vp-1023 {
+    width: auto;
+    height: auto;
+  }
 }
 
 .card__detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow-y: auto;
   padding: 28px 25px 35px 27px;
 }
 
