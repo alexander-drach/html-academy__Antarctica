@@ -8,4 +8,8 @@
 
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @include vp-1023 {
+    padding-top: 49px;
+  }
 }

@@ -6,6 +6,10 @@
 .social__item {
   margin-right: 27px;
 
+  @include vp-1023 {
+    margin-right: 22px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -21,4 +25,25 @@
   fill: $color-primary-white;
 
   transition: fill $trans-default;
+}
+
+.social__item--ok svg {
+  @include vp-1023 {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.social__item--yandex svg {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.social__item--reddit svg {
+  @include vp-1023 {
+    width: 16px;
+    height: 16px;
+  }
 }
