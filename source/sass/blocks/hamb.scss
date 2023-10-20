@@ -1,4 +1,6 @@
 .hamb {
+  position: relative;
+
   display: none;
 
   background-color: $color-transparent;
@@ -7,13 +9,50 @@
   height: 12px;
   border: none;
 
+  transition: all $trans-default;
+
+  @include vp-767 {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+
   &::before {
     content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+
     display: block;
-    width: 24px;
-    height: 12px;
-    background-repeat: no-repeat;
-    background-image: url(../img/sprite.svg#icon-hamb);
-    background-size: cover;
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-primary-white;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-primary-white;
+  }
+}
+
+.hamb__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-primary-white;
 }

@@ -13,16 +13,18 @@
   @include vp-1023 {
     max-width: none;
   }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .menu__item {
   margin-right: 33px;
 
   @include vp-1023 {
-   margin-right: 24px;
-  }
-
-  @include vp-767 {
+    margin-right: 24px;
   }
 
   &:last-child {
@@ -43,11 +45,6 @@
     font-size: 14px;
   }
 
-  @include vp-767 {
-    color: $color-primary-black;
-    font-size: 18px;
-  }
-
   @include hover-focus {
     color: $color-primary-blue;
   }
@@ -59,6 +56,17 @@
   @include vp-1023 {
     margin-bottom: 8px;
   }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.menu--header .menu__link {
+  @include vp-767 {
+    color: $color-primary-black;
+    font-size: 18px;
+  }
 }
 
 .menu--footer {
@@ -67,10 +75,27 @@
   @include vp-1023 {
     margin-bottom: 7px;
   }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+  }
 }
 
 .menu--footer .menu__link {
   @include vp-1023 {
     font-size: 12px;
+  }
+}
+
+.menu--footer .menu__item {
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  &:last-of-type {
+    @include vp-767 {
+      margin-bottom: 0;
+    }
   }
 }

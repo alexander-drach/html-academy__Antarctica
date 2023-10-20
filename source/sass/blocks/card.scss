@@ -4,6 +4,13 @@
   width: 100%;
 
   color: $color-primary-white;
+
+  @include hover-focus {
+    .card__preview {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 .card h3 {
@@ -12,6 +19,8 @@
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+
+  margin: 0;
 }
 
 .card__preview {
@@ -30,6 +39,11 @@
   @include vp-1023 {
     left: 35px;
     bottom: 27px;
+  }
+
+  @include vp-767 {
+    left: 25px;
+    bottom: 17px;
   }
 }
 
@@ -53,10 +67,10 @@
   @include vp-1023 {
     padding: 28px 34px 35px 35px;
   }
-}
 
-.card h3 {
-  margin: 0;
+  @include vp-767 {
+    padding: 28px 24px 35px 25px;
+  }
 }
 
 .card__detail h3 {
@@ -105,15 +119,6 @@
 
   @include vp-1023 {
     margin-top: 25px;
-  }
-}
-
-.card {
-  @include hover-focus {
-    .card__preview {
-      opacity: 0;
-      pointer-events: none;
-    }
   }
 }
 

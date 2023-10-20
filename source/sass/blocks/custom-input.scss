@@ -32,7 +32,7 @@
     }
 
     &::placeholder {
-      color: rgba(1, 28, 64, 0.70);
+      color: rgba(1, 28, 64, 0.7);
     }
   }
 
@@ -58,7 +58,6 @@
   }
 
   &.is-invalid {
-
     input {
       outline: 2px solid $color-primary-red;
 
