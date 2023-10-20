@@ -10,10 +10,11 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-primary-black:               #011C40;
-$color-primary-white:               #F9FBFD;
+$color-primary-black:               #011c40;
+$color-primary-white:               #f9fbfd;
+$color-primary-grey:                #d8d8d9;
 $color-primary-blue:                #00b2ff;
-$color-primary-red:                   #ff1553;
+$color-primary-red:                 #ff1553;
 
 // Gradient
 
@@ -27,7 +28,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-montserrat:                         'Montserrat', "Arial", sans-serif;
+$ff-montserrat:                         "Montserrat", "Arial", sans-serif;
 // Animation
 // ---------------------------------
 

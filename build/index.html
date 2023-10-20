@@ -8,6 +8,16 @@
   <meta name="description" content="Туристический проект Круизы в Антарктику ">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
 </head>
 
 <body>
@@ -127,11 +137,398 @@
           <div class="cruises__inner">
             <h2>Ближайшие круизы</h2>
             <ul class="cruises__list">
-              <li class="cruises__item">
-                <article class="card">
 
+              <li class="cruises__item"><!-- 1 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png" srcset="img/cards/card-1-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;Астория&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Астория&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Фолклендские острова - Антарктида</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Ушуайя</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>11 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>11500</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
                 </article>
-              </li>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 2 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png" srcset="img/cards/card-1-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Элайн"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Элайн&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Буэнос-Айрес</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>20 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>14500</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 3 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-3-mobile.webp 1x, img/cards/card-3-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-3-tablet.webp 1x, img/cards/card-3-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-3-mobile.png 1x, img/cards/card-3-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-3-tablet.png 1x, img/cards/card-3-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-3-desktop.png" srcset="img/cards/card-3-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Атлантис"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Атлантис&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Ушуайя</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>15 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>14500</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 4 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-4-mobile.webp 1x, img/cards/card-4-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-4-tablet.webp 1x, img/cards/card-4-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-4-mobile.png 1x, img/cards/card-4-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-4-tablet.png 1x, img/cards/card-4-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-4-desktop.png" srcset="img/cards/card-4-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Одиссей"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Одиссей&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Чили - Антарктида</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Пунта-Аренас</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>13 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>9700</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 5 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-5-mobile.webp 1x, img/cards/card-5-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-5-tablet.webp 1x, img/cards/card-5-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-5-mobile.png 1x, img/cards/card-5-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-5-tablet.png 1x, img/cards/card-5-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-5-desktop.png" srcset="img/cards/card-5-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Олимпия"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Олимпия&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Ушуайя</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>21 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>18600</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 6 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-6-mobile.webp 1x, img/cards/card-6-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-6-tablet.webp 1x, img/cards/card-6-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-6-mobile.png 1x, img/cards/card-6-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-6-tablet.png 1x, img/cards/card-6-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-6-desktop.png" srcset="img/cards/card-6-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Аврора"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Аврора&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Антарктида - Чили</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Ушуайя</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>14 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>11700</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 7 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-6-mobile.webp 1x, img/cards/card-6-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-6-tablet.webp 1x, img/cards/card-6-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-6-mobile.png 1x, img/cards/card-6-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-6-tablet.png 1x, img/cards/card-6-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-6-desktop.png" srcset="img/cards/card-6-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Леонор"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Леонор&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Пунта-Аренас</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>17 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>12500</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
+
+              <li class="cruises__item"><!-- 8 -->
+                <article class="card">
+                  <div class="card__preview">
+                    <picture>
+                      <source type="image/webp" srcset="img/cards/card-6-mobile.webp 1x, img/cards/card-6-mobile@2x.webp 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/webp" srcset="img/cards/card-6-tablet.webp 1x, img/cards/card-6-tablet@2x.webp 2x"
+                        media="(max-width: 1023px)" />
+
+                      <source type="image/png" srcset="img/cards/card-6-mobile.png 1x, img/cards/card-6-mobile@2x.png 2x"
+                        media="(max-width: 767px)" />
+                      <source type="image/png" srcset="img/cards/card-6-tablet.png 1x, img/cards/card-6-tablet@2x.png 2x"
+                        media="(max-width: 1023px)" />
+
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-6-desktop.png" srcset="img/cards/card-6-desktop@2x.png 2x" alt="увеличенное изображение платы" />
+                    </picture>
+                    <h3>Круиз &ldquo;"Минион - 1"&rdquo;</h3>
+                  </div>
+                  <div class="card__detail">
+                    <h3>Круиз &ldquo;Минион - 1&rdquo;</h3>
+                    <div class="card__chapter">
+                      <h4>Маршрут</h4>
+                      <div class="card__info">
+                        <p>Аргентина - Антарктида</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Порт отправления</h4>
+                      <div class="card__info">
+                        <p>Ушуайя</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Продолжительность</h4>
+                      <div class="card__info">
+                        <p>11 дней</p>
+                      </div>
+                    </div>
+                    <div class="card__chapter">
+                      <h4>Цена</h4>
+                      <div class="card__info">
+                        <p>от <span>12300</span> $</p>
+                      </div>
+                    </div>
+                    <a class="btn btn-white card__btn" href="#">Забронировать</a>
+                  </div>
+                </article>
+              </li><!-- cruises__item -->
             </ul>
           </div>
         </div>
@@ -153,7 +550,7 @@
               <form>
                 <div class="custom-input" data-validate-type="text" data-limitation="name">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input id="name" name="name" type="text" placeholder="Имя" required autofocus minlength="2">
+                  <input id="name" name="name" type="text" placeholder="Имя" required minlength="2">
                 </div>
 
                 <div class="custom-input" data-validate-type="phone">
@@ -169,7 +566,7 @@
                 <div class="custom-toggle custom-toggle--checkbox">
                   <input id="agree" type="checkbox" name="agree">
                   <span class="custom-toggle__icon"></span>
-                  <label for="agree">Я согласен на обработку моих персональных данных</label>
+                  <label for="agree">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</label>
                 </div>
 
                 <button class="btn btn-white booking__btn">Оставить заявку</button>
@@ -178,6 +575,23 @@
           </div><!-- booking__inner -->
         </div>
       </section><!-- booking -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contact__inner">
+            <div class="contact__map">
+              <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A79da39dd02fb133d21e20158e83d913a5805606b76a1a7cbd9876688bfb6f206&amp;source=constructor" width="100%" height="306" frameborder="0"></iframe> -->
+            </div>
+            <div class="contact__content">
+              <div class="contact__desc">
+                <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
+              </div>
+              <address class="contact__address">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+              <a class="contact__phone" href="tel:88002000000">8-800-200-00-00</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">

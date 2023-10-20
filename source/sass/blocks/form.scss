@@ -4,6 +4,10 @@
   width: 403px;
   background-color: $color-primary-black;
   padding: 50px;
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .form__desc {

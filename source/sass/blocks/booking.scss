@@ -37,6 +37,9 @@
 
   @include vp-1023 {
     flex-direction: column;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
