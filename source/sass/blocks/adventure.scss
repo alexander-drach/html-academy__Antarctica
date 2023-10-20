@@ -1,9 +1,7 @@
-.adventure {}
-
 .aventure__inner {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 120px;
+  padding-top: 126px;
   padding-bottom: 145px;
 
   @include vp-1023 {
@@ -19,6 +17,8 @@
 
 .adventure__text {
   flex: 1;
+
+  padding-top: 55px;
   margin-right: 88px;
 
   @include vp-1023 {
@@ -42,7 +42,7 @@
   line-height: 150%;
 
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 
   @include vp-1023 {
     font-size: 26px;
