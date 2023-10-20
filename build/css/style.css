@@ -1540,10 +1540,20 @@ button,
   transition: opacity 0.3s ease;
 }
 
+.card__preview picture {
+  width: 100%;
+}
+
+.card__preview img {
+  width: 100%;
+  height: auto;
+}
+
 .card__preview h3 {
   position: absolute;
   left: 30px;
   bottom: 22px;
+  padding-right: 20px;
 }
 @media (max-width: 1023px) {
   .card__preview h3 {
@@ -1555,13 +1565,6 @@ button,
   .card__preview h3 {
     left: 25px;
     bottom: 17px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .card__preview img {
-    width: auto;
-    height: auto;
   }
 }
 
