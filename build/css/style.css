@@ -1536,6 +1536,8 @@ button,
           align-items: flex-end;
   z-index: 2;
   background-color: #00b2ff;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .card__preview h3 {

@@ -29,6 +29,8 @@
   align-items: flex-end;
   z-index: 2;
   background-color: $color-primary-blue;
+
+  transition: opacity $trans-default;
 }
 
 .card__preview h3 {
