@@ -1506,13 +1506,13 @@ button,
   width: 100%;
   color: #f9fbfd;
 }
-@media (hover: hover) {
-  .card:hover:not(.focus-visible) .card__preview {
-    opacity: 0;
-    pointer-events: none;
-  }
+
+.card:hover .card__preview {
+  opacity: 0;
+  pointer-events: none;
 }
-.card.focus-visible:focus .card__preview {
+
+.card:focus .card__preview {
   opacity: 0;
   pointer-events: none;
 }

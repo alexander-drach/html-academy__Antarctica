@@ -4,13 +4,16 @@
   width: 100%;
 
   color: $color-primary-white;
+}
 
-  @include hover-focus {
-    .card__preview {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
+.card:hover .card__preview {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card:focus .card__preview {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .card h3 {
