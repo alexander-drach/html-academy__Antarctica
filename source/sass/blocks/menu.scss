@@ -59,6 +59,32 @@
 
   @include vp-767 {
     display: none;
+    flex-direction: column;
+    background-color: $color-primary-white;
+    position: absolute;
+    right: -15px;
+    top: 100%;
+    width: calc(100% - 7px);
+    min-height: 100vh;
+
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.menu--header .menu__item {
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+}
+
+.menu--header .menu__link {
+  @include vp-767 {
+    color: $color-primary-black;
+    font-size: 18px;
   }
 }
 
@@ -98,4 +124,9 @@
       margin-bottom: 0;
     }
   }
+}
+
+.is-open .menu--header {
+  display: flex;
+  z-index: 500;
 }

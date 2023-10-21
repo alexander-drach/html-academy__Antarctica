@@ -56,3 +56,26 @@
 
   background-color: $color-primary-white;
 }
+
+.is-open .hamb {
+  width: 13px;
+  height: 13px;
+}
+
+.is-open .hamb__line {
+  display: none;
+}
+
+.is-open .hamb::before {
+  transform-origin: 1px 1px;
+  width: 18px;
+  transform: rotate(45deg);
+  background-color: $color-primary-black;
+}
+
+.is-open .hamb::after {
+  transform-origin: 1px 100%;
+  width: 18px;
+  transform: rotate(-45deg);
+  background-color: $color-primary-black;
+}
