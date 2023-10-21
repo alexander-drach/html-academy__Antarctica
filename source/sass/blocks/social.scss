@@ -1,6 +1,9 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+
+  max-width: 140px;
 }
 
 .social__item {
