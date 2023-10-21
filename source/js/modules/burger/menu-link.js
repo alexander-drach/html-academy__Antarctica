@@ -1,5 +1,5 @@
-import scrollLock from './scroll-lock';
-import {FocusLock} from './focus-lock';
+import {ScrollLock} from '../../utils/scroll-lock';
+import {FocusLock} from '../../utils/focus-lock';
 
 const clickMenuLinks = () => {
   if (document.querySelectorAll('.menu--header .menu__link').length > 0) {
@@ -14,11 +14,11 @@ const clickMenuLinks = () => {
           item._focusLock = new FocusLock();
           item._focusLock.unlock('[data-header]');
 
-          item._scrollLock = scrollLock;
-          item._scrollLock.enablePageScroll();
+          item._scrollLock = new ScrollLock();
+          item._scrollLock.enableScrolling();
         }
-      })
-    })
+      });
+    });
   }
 };
 
