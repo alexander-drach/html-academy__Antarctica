@@ -11,8 +11,8 @@
   @include vp-1023 {
     background-image: url("../img/bg/features-bg-tablet.png");
 
-    @supports (background-image: url("../img/bg/features-bg-table.webp")) {
-      background-image: url("../img/bg/features-bg-table.webp");
+    @supports (background-image: url("../img/bg/features-bg-tablet.webp")) {
+      background-image: url("../img/bg/features-bg-tablet.webp");
     }
   }
 
