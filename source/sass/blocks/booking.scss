@@ -3,12 +3,28 @@
   background-size: cover;
   background-image: url("../img/bg/booking-bg-desktop.png");
 
+  @supports (background-image: url("../img/bg/booking-bg-desktop.webp")) {
+    background-image: url("../img/bg/booking-bg-desktop.webp");
+  }
+
   @include vp-1023 {
     background-image: url("../img/bg/booking-bg-tablet.png");
+
+    @supports (background-image: url("../img/bg/booking-bg-tablet.webp")) {
+      background-image: url("../img/bg/booking-bg-tablet.webp");
+    }
   }
 
   @include vp-767 {
     background-image: url("../img/bg/booking-bg-mobile.png");
+
+    @supports (background-image: url("../img/bg/booking-bg-mobile.webp")) {
+      background-image: url("../img/bg/booking-bg-mobile.webp");
+    }
+  }
+
+  @media (min-width: $vp-1920) {
+    background-position: center;
   }
 }
 

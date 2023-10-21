@@ -23,6 +23,10 @@
       background-image: url("../img/bg/features-bg-mobile.webp");
     }
   }
+
+  @media (min-width: $vp-1920) {
+    background-position: center;
+  }
 }
 
 .features__inner {

@@ -27,6 +27,10 @@
       background-image: url("../img/bg/intro-bg-mobile.webp");
     }
   }
+
+  @media (min-width: $vp-1920) {
+    background-position: center;
+  }
 }
 
 .intro__inner {

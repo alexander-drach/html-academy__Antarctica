@@ -590,7 +590,7 @@
               <div class="form__desc">
                 <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               </div>
-              <form>
+              <form method="post" action="https://echo.htmlacademy.ru" name="bookingform">
                 <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="name">Имя</label>
                   <input id="name" name="name" type="text" placeholder="Имя" required minlength="2">
@@ -598,16 +598,16 @@
 
                 <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="tel">Телефон</label>
-                  <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
+                  <input id="tel" name="tel" type="tel" placeholder="Телефон">
                 </div>
 
                 <div class="custom-input" data-validate-type="email" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="tel">email</label>
-                  <input id="email" name="email" type="email" placeholder="Email" required>
+                  <input id="email" name="email" type="email" placeholder="Email">
                 </div>
 
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
-                  <input id="agree" type="checkbox" name="agree">
+                  <input id="agree" type="checkbox" name="agree" required>
                   <span class="custom-toggle__icon">
                     <svg width="10" height="6">
                       <use xlink:href="img/sprite.svg#icon-check"></use>
@@ -616,7 +616,7 @@
                   <label for="agree">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</label>
                 </div>
 
-                <button class="btn btn-white booking__btn">Оставить заявку</button>
+                <button class="btn btn-white booking__btn" type="submit">Оставить заявку</button>
               </form>
             </div>
           </div><!-- booking__inner -->

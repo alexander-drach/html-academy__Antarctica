@@ -1073,6 +1073,11 @@ button,
     }
   }
 }
+@media (min-width: 1920px) {
+  .intro {
+    background-position: center;
+  }
+}
 
 .intro__inner {
   padding-top: 155px;
@@ -1278,6 +1283,11 @@ button,
     .features {
       background-image: url("../img/bg/features-bg-mobile.webp");
     }
+  }
+}
+@media (min-width: 1920px) {
+  .features {
+    background-position: center;
   }
 }
 
@@ -1678,14 +1688,34 @@ button,
   background-size: cover;
   background-image: url("../img/bg/booking-bg-desktop.png");
 }
+@supports (background-image: url("../img/bg/booking-bg-desktop.webp")) {
+  .booking {
+    background-image: url("../img/bg/booking-bg-desktop.webp");
+  }
+}
 @media (max-width: 1023px) {
   .booking {
     background-image: url("../img/bg/booking-bg-tablet.png");
+  }
+  @supports (background-image: url("../img/bg/booking-bg-tablet.webp")) {
+    .booking {
+      background-image: url("../img/bg/booking-bg-tablet.webp");
+    }
   }
 }
 @media (max-width: 767px) {
   .booking {
     background-image: url("../img/bg/booking-bg-mobile.png");
+  }
+  @supports (background-image: url("../img/bg/booking-bg-mobile.webp")) {
+    .booking {
+      background-image: url("../img/bg/booking-bg-mobile.webp");
+    }
+  }
+}
+@media (min-width: 1920px) {
+  .booking {
+    background-position: center;
   }
 }
 
