@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/burger/burger';
+import {clickMenuLinks} from './modules/burger/menu-link';
 
 // ---------------------------------
 
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const burger = new Burger();
     burger.init();
+
+    clickMenuLinks();
   });
 });
 
