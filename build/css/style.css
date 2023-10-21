@@ -669,7 +669,8 @@ button,
 .custom-input .input-message {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -20px;
+  font-size: 11px;
 }
 .custom-input .input-message.is-invalid {
   color: #ff0000;
@@ -755,11 +756,22 @@ button,
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-.custom-toggle input:checked + .custom-toggle__icon {
-  border: 1.5px solid #2c39f2;
+.custom-toggle .custom-toggle__icon svg {
+  display: none;
 }
-.custom-toggle input:checked + .custom-toggle__icon::before {
-  background-color: #2c39f2;
+.custom-toggle input:checked + .custom-toggle__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.custom-toggle input:checked + .custom-toggle__icon svg {
+  display: block;
 }
 .custom-toggle.is-invalid label span {
   color: #ff1553;
@@ -767,13 +779,28 @@ button,
 .custom-toggle .input-message {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: -20px;
+  font-size: 11px;
 }
 .custom-toggle .input-message.is-invalid {
   color: #ff0000;
 }
 .custom-toggle .input-message.is-valid {
   color: #15ab07;
+}
+@media (hover: hover) {
+  .custom-toggle:hover:not(.focus-visible) label {
+    color: #00b2ff;
+  }
+  .custom-toggle:hover:not(.focus-visible) .custom-toggle__icon {
+    border: 1px solid #00b2ff;
+  }
+}
+.custom-toggle.focus-visible:focus label {
+  color: #00b2ff;
+}
+.custom-toggle.focus-visible:focus .custom-toggle__icon {
+  border: 1px solid #00b2ff;
 }
 
 .header {

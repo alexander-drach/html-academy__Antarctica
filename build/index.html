@@ -586,29 +586,33 @@
                 <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
               </div>
             </div>
-            <div class="form">
+            <div class="form" data-form-validate data-callback="base" data-parent-validate="base">
               <div class="form__desc">
                 <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               </div>
               <form>
-                <div class="custom-input" data-validate-type="text" data-limitation="name">
+                <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="name">Имя</label>
                   <input id="name" name="name" type="text" placeholder="Имя" required minlength="2">
                 </div>
 
-                <div class="custom-input" data-validate-type="phone">
+                <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="tel">Телефон</label>
-                  <input id="tel" name="tel" type="tel" placeholder="Телефон">
+                  <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
                 </div>
 
-                <div class="custom-input" data-validate-type="email">
+                <div class="custom-input" data-validate-type="email" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="tel">email</label>
-                  <input id="email" name="email" type="email" placeholder="Email">
+                  <input id="email" name="email" type="email" placeholder="Email" required>
                 </div>
 
-                <div class="custom-toggle custom-toggle--checkbox">
+                <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
                   <input id="agree" type="checkbox" name="agree">
-                  <span class="custom-toggle__icon"></span>
+                  <span class="custom-toggle__icon">
+                    <svg width="10" height="6">
+                      <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
                   <label for="agree">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</label>
                 </div>
 

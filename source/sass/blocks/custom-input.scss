@@ -82,7 +82,9 @@
   .input-message {
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: -20px;
+
+    font-size: 11px;
 
     &.is-invalid {
       color: #ff0000;

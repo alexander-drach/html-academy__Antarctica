@@ -88,11 +88,19 @@
     }
   }
 
-  input:checked + .custom-toggle__icon {
-    border: 1.5px solid #2c39f2;
+  .custom-toggle__icon {
+    svg {
+      display: none;
+    }
+  }
 
-    &::before {
-      background-color: #2c39f2;
+  input:checked + .custom-toggle__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      display: block;
     }
   }
 
@@ -105,7 +113,9 @@
   .input-message {
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: -20px;
+
+    font-size: 11px;
 
     &.is-invalid {
       color: #ff0000;
@@ -113,6 +123,16 @@
 
     &.is-valid {
       color: #15ab07;
+    }
+  }
+
+  @include hover-focus {
+    label {
+      color: $color-primary-blue;
+    }
+
+    .custom-toggle__icon {
+      border: 1px solid $color-primary-blue;
     }
   }
 }
