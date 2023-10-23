@@ -60,29 +60,3 @@
 
   background-color: $color-primary-white;
 }
-
-.is-open .hamb {
-  position: absolute;
-  right: 16px;
-  top: 26px;
-}
-
-.is-open .hamb__line {
-  display: none;
-}
-
-.is-open .hamb::before {
-  width: 18px;
-  left: 11px;
-  top: 5px;
-  transform: rotate(45deg);
-  background-color: $color-primary-black;
-}
-
-.is-open .hamb::after {
-  width: 18px;
-  left: 11px;
-  bottom: 5px;
-  transform: rotate(-45deg);
-  background-color: $color-primary-black;
-}

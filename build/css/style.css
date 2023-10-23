@@ -1001,36 +1001,6 @@ button,
   background-color: #f9fbfd;
 }
 
-.is-open .hamb {
-  position: absolute;
-  right: 16px;
-  top: 26px;
-}
-
-.is-open .hamb__line {
-  display: none;
-}
-
-.is-open .hamb::before {
-  width: 18px;
-  left: 11px;
-  top: 5px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #011c40;
-}
-
-.is-open .hamb::after {
-  width: 18px;
-  left: 11px;
-  bottom: 5px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-color: #011c40;
-}
-
 .intro {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1591,10 +1561,39 @@ button,
 
 .is-open.header {
   padding-left: 22px;
-  margin-right: -15px;
   background: rgba(0, 43, 102, 0.5);
   -webkit-filter: none;
   filter: none;
+}
+
+.is-open .hamb {
+  position: absolute;
+  right: 16px;
+  top: 26px;
+}
+
+.is-open .hamb__line {
+  display: none;
+}
+
+.is-open .hamb::before {
+  width: 18px;
+  left: 11px;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #011c40;
+}
+
+.is-open .hamb::after {
+  width: 18px;
+  left: 11px;
+  bottom: 5px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #011c40;
 }
 
 .overlay {
