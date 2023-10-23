@@ -62,7 +62,9 @@
 }
 
 .is-open .hamb {
-  margin-bottom: 0;
+  position: absolute;
+  right: 16px;
+  top: 26px;
 }
 
 .is-open .hamb__line {
