@@ -7,10 +7,6 @@
   max-width: 140px;
 
   margin-bottom: -6px;
-
-  @include vp-1023 {
-    margin-bottom: 2px;
-  }
 }
 
 .social__item {

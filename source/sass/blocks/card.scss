@@ -6,14 +6,15 @@
   color: $color-primary-white;
 }
 
-.card:hover .card__preview {
-  opacity: 0;
-  pointer-events: none;
-}
+.card:focus-within .card__detail,
+.card:hover .card__detail {
+  z-index: 3;
 
-.card:focus .card__preview {
-  opacity: 0;
-  pointer-events: none;
+  box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
+  visibility: visible;
+  opacity: 1;
+
+  pointer-events: all;
 }
 
 .card h3 {
@@ -26,52 +27,55 @@
   margin: 0;
 }
 
-.card__preview {
-  position: relative;
+.card__link {
   display: flex;
-  align-items: flex-end;
-  z-index: 2;
-  background-color: $color-primary-blue;
-
-  transition: opacity $trans-default;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
-.card__preview picture {
-  width: 100%;
+.card__preview {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+
+  background-color: $color-primary-blue;
 }
 
 .card__preview img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .card__preview h3 {
-  position: absolute;
-  left: 30px;
-  bottom: 22px;
-
-  padding-right: 20px;
+  margin: auto 30px 22px;
 
   @include vp-1023 {
-    left: 35px;
-    bottom: 27px;
+    margin: auto 35px 27px;
   }
 
   @include vp-767 {
-    left: 25px;
-    bottom: 17px;
+    margin: auto 25px 17px;
   }
 }
 
 .card__detail {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-
-  overflow-y: auto;
+  z-index: -1;
   padding: 28px 25px 10px 25px;
+  overflow-y: auto;
+  color: $color-primary-white;
+  background-color: $color-primary-black;
+  opacity: 0;
+
+  inset: 0;
+
+  pointer-events: none;
 
   @include vp-1023 {
     padding: 28px 34px 10px 35px;

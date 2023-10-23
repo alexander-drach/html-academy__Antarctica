@@ -1,0 +1,23 @@
+.is-open .overlay {
+  display: block;
+}
+
+.is-open svg {
+  color: $color-primary-black;
+}
+
+.is-open .header__inner {
+  background-color: $color-primary-white;
+
+  padding-left: 14px;
+  padding-right: 15px;
+  margin-right: -15px;
+}
+
+.is-open.header {
+  padding-left: 22px;
+  margin-right: -15px;
+
+  background: rgba(0, 43, 102, 0.5);
+  filter: none;
+}

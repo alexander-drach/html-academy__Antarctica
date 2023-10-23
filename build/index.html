@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Туристический проект Круизы в Антарктику ">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -30,6 +30,7 @@
     <section class="intro">
       <div class="container">
         <header class="header" data-header>
+          <div class="overlay" data-close-menu></div>
           <div class="header__inner">
             <a class="logo logo--header" href="#">
               <svg width="70" height="38">
@@ -40,21 +41,20 @@
             <nav class="nav">
               <ul class="menu menu--header">
                 <li class="menu__item">
-                  <a class="menu__link" href="#features">Преимущества</a>
+                  <a class="menu__link" href="#features" data-close-menu>Преимущества</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Направления</a>
+                  <a class="menu__link" href="#" data-close-menu>Направления</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#cruises">Ближайшие круизы</a>
+                  <a class="menu__link" href="#cruises" data-close-menu>Ближайшие круизы</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#contact">Контакты</a>
+                  <a class="menu__link" href="#contact" data-close-menu>Контакты</a>
                 </li>
               </ul>
             </nav>
-            <button class="hamb" type="button" data-burger>
-              <span class="visually-hidden">Открыть / Закрыть меню</span>
+            <button class="hamb" type="button" data-burger aria-label="Открыть / Закрыть меню">
               <span class="hamb__line"></span>
             </button>
           </div><!-- header__inner -->
@@ -80,18 +80,13 @@
             </div>
             <div class="adventure__img">
               <picture>
-                <source type="image/webp" srcset="img/adventure-mobile.webp 1x, img/adventure-mobile@2x.webp 2x"
-                  media="(max-width: 767px)" />
-                <source type="image/webp" srcset="img/adventure-tablet.webp 1x, img/adventure-tablet@2x.webp 2x"
-                  media="(max-width: 1023px)" />
+                <source type="image/webp" srcset="img/adventure-mobile.webp 1x, img/adventure-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <source type="image/webp" srcset="img/adventure-tablet.webp 1x, img/adventure-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                <source type="image/png" srcset="img/adventure-mobile.png 1x, img/adventure-mobile@2x.png 2x"
-                  media="(max-width: 767px)" />
-                <source type="image/png" srcset="img/adventure-tablet.png 1x, img/adventure-tablet@2x.png 2x"
-                  media="(max-width: 1023px)" />
+                <source type="image/png" srcset="img/adventure-mobile.png 1x, img/adventure-mobile@2x.png 2x" media="(max-width: 767px)">
+                <source type="image/png" srcset="img/adventure-tablet.png 1x, img/adventure-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                <img width="560" height="301" src="img/adventure-desktop.png"
-                  srcset="img/adventure-desktop@2x.png" alt="три пингвина на снегу">
+                <img width="560" height="301" src="img/adventure-desktop.png" srcset="img/adventure-desktop@2x.png" alt="три пингвина на снегу">
               </picture>
             </div>
           </div><!-- adventure__inner -->
@@ -145,24 +140,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png"
-                        srcset="img/cards/card-1-desktop@2x.png 2x" alt="фото круиз Астория">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png" srcset="img/cards/card-1-desktop@2x.png 2x" alt="фото круиз Астория">
                     </picture>
-                    <h3>Круиз &ldquo;Астория&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Астория&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Астория&rdquo;</h3>
@@ -200,23 +188,17 @@
                   <div class="card__preview">
                     <picture>
                       <source type="image/webp"
-                        srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                        srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-1-mobile.png 1x, img/cards/card-1-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-1-tablet.png 1x, img/cards/card-1-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png"
-                        srcset="img/cards/card-1-desktop@2x.png 2x" alt="фото круиз Элайн">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-1-desktop.png" srcset="img/cards/card-1-desktop@2x.png 2x" alt="фото круиз Элайн">
                     </picture>
-                    <h3>Круиз &ldquo;Элайн&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Элайн&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Элайн&rdquo;</h3>
@@ -253,24 +235,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-3-mobile.webp 1x, img/cards/card-3-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-3-tablet.webp 1x, img/cards/card-3-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-3-mobile.webp 1x, img/cards/card-3-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-3-tablet.webp 1x, img/cards/card-3-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-3-mobile.png 1x, img/cards/card-3-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-3-tablet.png 1x, img/cards/card-3-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-3-mobile.png 1x, img/cards/card-3-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-3-tablet.png 1x, img/cards/card-3-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-3-desktop.png"
-                        srcset="img/cards/card-3-desktop@2x.png 2x" alt="фото круиз Атлантис">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-3-desktop.png" srcset="img/cards/card-3-desktop@2x.png 2x" alt="фото круиз Атлантис">
                     </picture>
-                    <h3>Круиз &ldquo;Атлантис&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Атлантис&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Атлантис&rdquo;</h3>
@@ -307,24 +282,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-4-mobile.webp 1x, img/cards/card-4-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-4-tablet.webp 1x, img/cards/card-4-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-4-mobile.webp 1x, img/cards/card-4-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-4-tablet.webp 1x, img/cards/card-4-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-4-mobile.png 1x, img/cards/card-4-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-4-tablet.png 1x, img/cards/card-4-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-4-mobile.png 1x, img/cards/card-4-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-4-tablet.png 1x, img/cards/card-4-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-4-desktop.png"
-                        srcset="img/cards/card-4-desktop@2x.png 2x" alt="фото круиз Одиссей">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-4-desktop.png" srcset="img/cards/card-4-desktop@2x.png 2x" alt="фото круиз Одиссей">
                     </picture>
-                    <h3>Круиз &ldquo;Одиссей&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Одиссей&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Одиссей&rdquo;</h3>
@@ -361,24 +329,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-5-mobile.webp 1x, img/cards/card-5-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-5-tablet.webp 1x, img/cards/card-5-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-5-mobile.webp 1x, img/cards/card-5-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-5-tablet.webp 1x, img/cards/card-5-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-5-mobile.png 1x, img/cards/card-5-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-5-tablet.png 1x, img/cards/card-5-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-5-mobile.png 1x, img/cards/card-5-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-5-tablet.png 1x, img/cards/card-5-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-5-desktop.png"
-                        srcset="img/cards/card-5-desktop@2x.png 2x" alt="Фото круиз Олимпия">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-5-desktop.png" srcset="img/cards/card-5-desktop@2x.png 2x" alt="Фото круиз Олимпия">
                     </picture>
-                    <h3>Круиз &ldquo;Олимпия&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Олимпия&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Олимпия&rdquo;</h3>
@@ -415,24 +376,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-6-mobile.webp 1x, img/cards/card-6-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-6-tablet.webp 1x, img/cards/card-6-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-6-mobile.webp 1x, img/cards/card-6-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-6-tablet.webp 1x, img/cards/card-6-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-6-mobile.png 1x, img/cards/card-6-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-6-tablet.png 1x, img/cards/card-6-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-6-mobile.png 1x, img/cards/card-6-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-6-tablet.png 1x, img/cards/card-6-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-6-desktop.png"
-                        srcset="img/cards/card-6-desktop@2x.png 2x" alt="фото круиз Аврора">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-6-desktop.png" srcset="img/cards/card-6-desktop@2x.png 2x" alt="фото круиз Аврора">
                     </picture>
-                    <h3>Круиз &ldquo;Аврора&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Аврора&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Аврора&rdquo;</h3>
@@ -469,24 +423,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-7-mobile.webp 1x, img/cards/card-7-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-7-tablet.webp 1x, img/cards/card-7-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-7-mobile.webp 1x, img/cards/card-7-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-7-tablet.webp 1x, img/cards/card-7-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-7-mobile.png 1x, img/cards/card-7-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-7-tablet.png 1x, img/cards/card-7-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-7-mobile.png 1x, img/cards/card-7-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-7-tablet.png 1x, img/cards/card-7-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-7-desktop.png"
-                        srcset="img/cards/card-7-desktop@2x.png 2x" alt="фото круиз Леонор">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-7-desktop.png" srcset="img/cards/card-7-desktop@2x.png 2x" alt="фото круиз Леонор">
                     </picture>
-                    <h3>Круиз &ldquo;Леонор&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Леонор&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Леонор&rdquo;</h3>
@@ -523,24 +470,17 @@
                 <article class="card">
                   <div class="card__preview">
                     <picture>
-                      <source type="image/webp"
-                        srcset="img/cards/card-8-mobile.webp 1x, img/cards/card-8-mobile@2x.webp 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/webp"
-                        srcset="img/cards/card-8-tablet.webp 1x, img/cards/card-8-tablet@2x.webp 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/webp" srcset="img/cards/card-8-mobile.webp 1x, img/cards/card-8-mobile@2x.webp 2x" media="(max-width: 767px)">
+                      <source type="image/webp" srcset="img/cards/card-8-tablet.webp 1x, img/cards/card-8-tablet@2x.webp 2x" media="(max-width: 1023px)">
 
-                      <source type="image/png"
-                        srcset="img/cards/card-8-mobile.png 1x, img/cards/card-8-mobile@2x.png 2x"
-                        media="(max-width: 767px)" />
-                      <source type="image/png"
-                        srcset="img/cards/card-8-tablet.png 1x, img/cards/card-8-tablet@2x.png 2x"
-                        media="(max-width: 1023px)" />
+                      <source type="image/png" srcset="img/cards/card-8-mobile.png 1x, img/cards/card-8-mobile@2x.png 2x" media="(max-width: 767px)">
+                      <source type="image/png" srcset="img/cards/card-8-tablet.png 1x, img/cards/card-8-tablet@2x.png 2x" media="(max-width: 1023px)">
 
-                      <img width="260" height="386" class="card__thumb" src="img/cards/card-8-desktop.png"
-                        srcset="img/cards/card-8-desktop@2x.png 2x" alt="фото круиз Минион 1">
+                      <img width="260" height="386" class="card__thumb" src="img/cards/card-8-desktop.png" srcset="img/cards/card-8-desktop@2x.png 2x" alt="фото круиз Минион 1">
                     </picture>
-                    <h3>Круиз &ldquo;Минион&nbsp;-&nbsp;1&rdquo;</h3>
+                    <a class="card__link" href="#">
+                      <h3>Круиз &ldquo;Минион&nbsp;-&nbsp;1&rdquo;</h3>
+                    </a>
                   </div>
                   <div class="card__detail">
                     <h3>Круиз &ldquo;Минион&nbsp;-&nbsp;1&rdquo;</h3>
@@ -593,17 +533,17 @@
               <form method="post" action="https://echo.htmlacademy.ru" name="bookingform">
                 <div class="custom-input" data-validate-type="text" data-limitation="name" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="name">Имя</label>
-                  <input id="name" name="name" type="text" placeholder="Имя" minlength="2">
+                  <input id="name" name="name" type="text" placeholder="Имя" minlength="2" required>
                 </div>
 
                 <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="tel">Телефон</label>
-                  <input id="tel" name="tel" type="tel" placeholder="Телефон">
+                  <input id="tel" name="tel" type="tel" placeholder="Телефон" required>
                 </div>
 
                 <div class="custom-input" data-validate-type="email" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
                   <label class="visually-hidden" for="email">email</label>
-                  <input id="email" name="email" type="email" placeholder="Email">
+                  <input id="email" name="email" type="email" placeholder="Email" required>
                 </div>
 
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению">
@@ -627,10 +567,7 @@
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contact__inner">
             <div class="contact__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d499.6502692931014!2d30.324110478654053!3d59.938761448425666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!4m0!5e0!3m2!1sru!2sru!4v1697787627424!5m2!1sru!2sru"
-                width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d499.6502692931014!2d30.324110478654053!3d59.938761448425666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m2!1d59.9387165!2d30.3230474!4m0!5e0!3m2!1sru!2sru!4v1697787627424!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contact__content">
               <div class="contact__desc">

@@ -39,6 +39,10 @@
 }
 
 .contact__map iframe {
+  width: 560px;
+  height: 306px;
+  border: none;
+
   @include vp-1023 {
     width: 324px;
     height: 335px;
@@ -107,12 +111,6 @@
   @include vp-1023 {
     margin-top: 3px;
   }
-}
-
-.contact-icon {
-  flex-shrink: 0;
-
-  margin-right: 10px;
 }
 
 .contact__phone {

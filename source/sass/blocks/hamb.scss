@@ -13,7 +13,7 @@
 
   @include vp-767 {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
   }
 
 
@@ -22,6 +22,8 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    transform-origin: center;
 
     display: block;
     width: 100%;
@@ -35,6 +37,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
+
+    transform-origin: center;
 
     display: block;
     width: 100%;
@@ -58,8 +62,7 @@
 }
 
 .is-open .hamb {
-  width: 13px;
-  height: 13px;
+  margin-bottom: 0;
 }
 
 .is-open .hamb__line {
@@ -67,15 +70,17 @@
 }
 
 .is-open .hamb::before {
-  transform-origin: 1px 1px;
   width: 18px;
+  left: 11px;
+  top: 5px;
   transform: rotate(45deg);
   background-color: $color-primary-black;
 }
 
 .is-open .hamb::after {
-  transform-origin: 1px 100%;
   width: 18px;
+  left: 11px;
+  bottom: 5px;
   transform: rotate(-45deg);
   background-color: $color-primary-black;
 }

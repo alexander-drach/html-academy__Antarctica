@@ -1,6 +1,18 @@
 .logo {
   flex-shrink: 0;
 
+  color: $color-primary-white;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+
   &--header {
     margin-right: auto;
   }
@@ -14,25 +26,13 @@
 
     @include vp-767 {
       margin-right: 0;
-      margin-bottom: 15px;
+      margin-bottom: 22px;
     }
   }
 }
 
 .logo svg {
-  fill: $color-primary-white;
-
-  @include vp-1023 {
-    width: 38px;
-    height: 20px;
-  }
-
-  @include vp-767 {
-    width: 42px;
-    height: 22px;
-  }
-}
-
-.is-open svg {
-  fill: $color-primary-black;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }

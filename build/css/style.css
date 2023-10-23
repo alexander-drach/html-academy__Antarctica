@@ -800,21 +800,6 @@ button,
   transition: border 0.3s ease;
 }
 
-.custom-toggle--checkbox .custom-toggle__icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(44, 57, 242, 0);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
 .custom-toggle .custom-toggle__icon svg {
   display: none;
 }
@@ -833,6 +818,14 @@ button,
 
 .custom-toggle input:checked + .custom-toggle__icon svg {
   display: block;
+}
+
+.custom-toggle input:focus + .custom-toggle__icon {
+  border: 1px solid #00b2ff;
+}
+
+.custom-toggle input:focus ~ label {
+  color: #00b2ff;
 }
 
 .custom-toggle.is-invalid label span {
@@ -869,6 +862,7 @@ button,
 }
 
 .header__inner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,24 +873,10 @@ button,
   padding-bottom: 35px;
 }
 
-.is-open .header__inner {
-  background-color: #f9fbfd;
-  padding-left: 14px;
-  padding-right: 15px;
-  margin-right: -15px;
-}
-
-.is-open.header {
-  padding-left: 22px;
-  margin-right: -15px;
-  background: rgba(0, 43, 102, 0.5);
-  -webkit-filter: none;
-  filter: none;
-}
-
 .logo {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  color: #f9fbfd;
 }
 
 .logo--header {
@@ -908,11 +888,9 @@ button,
 }
 
 .logo svg {
-  fill: #f9fbfd;
-}
-
-.is-open svg {
-  fill: #011c40;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
 }
 
 .menu {
@@ -986,6 +964,9 @@ button,
   position: absolute;
   left: 0;
   top: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   display: block;
   width: 100%;
   height: 2px;
@@ -997,6 +978,9 @@ button,
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   display: block;
   width: 100%;
   height: 2px;
@@ -1017,8 +1001,7 @@ button,
 }
 
 .is-open .hamb {
-  width: 13px;
-  height: 13px;
+  margin-bottom: 0;
 }
 
 .is-open .hamb__line {
@@ -1026,10 +1009,9 @@ button,
 }
 
 .is-open .hamb::before {
-  -webkit-transform-origin: 1px 1px;
-  -ms-transform-origin: 1px 1px;
-  transform-origin: 1px 1px;
   width: 18px;
+  left: 11px;
+  top: 5px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1037,10 +1019,9 @@ button,
 }
 
 .is-open .hamb::after {
-  -webkit-transform-origin: 1px 100%;
-  -ms-transform-origin: 1px 100%;
-  transform-origin: 1px 100%;
   width: 18px;
+  left: 11px;
+  bottom: 5px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1215,10 +1196,6 @@ button,
   margin-bottom: 0;
 }
 
-.features__item--cruise-ship h3 {
-  margin-bottom: 8px;
-}
-
 .cruises h2 {
   text-align: center;
   font-size: 28px;
@@ -1258,14 +1235,14 @@ button,
   color: #f9fbfd;
 }
 
-.card:hover .card__preview {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.card:focus .card__preview {
-  opacity: 0;
-  pointer-events: none;
+.card:focus-within .card__detail,
+.card:hover .card__detail {
+  z-index: 3;
+  -webkit-box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px 0 rgba(1, 28, 64, 0.15);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .card h3 {
@@ -1277,44 +1254,50 @@ button,
   margin: 0;
 }
 
+.card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 .card__preview {
   position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  z-index: 2;
   background-color: #00b2ff;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
-.card__preview picture {
-  width: 100%;
 }
 
 .card__preview img {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .card__preview h3 {
-  position: absolute;
-  left: 30px;
-  bottom: 22px;
-  padding-right: 20px;
+  margin: auto 30px 22px;
 }
 
 .card__detail {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow-y: auto;
+  z-index: -1;
   padding: 28px 25px 10px 25px;
+  overflow-y: auto;
+  color: #f9fbfd;
+  background-color: #011c40;
+  opacity: 0;
+  inset: 0;
+  pointer-events: none;
 }
 
 .card__detail h3 {
@@ -1368,6 +1351,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/bg/booking-bg-desktop.png");
+  background-color: #d7e5f3;
 }
 
 @supports (background-image: url("../img/bg/booking-bg-desktop.webp")) {
@@ -1442,6 +1426,12 @@ button,
   margin-right: 100px;
 }
 
+.contact__map iframe {
+  width: 560px;
+  height: 306px;
+  border: none;
+}
+
 .contact__content {
   padding-top: 76px;
   -webkit-box-flex: 1;
@@ -1479,12 +1469,6 @@ button,
   margin-bottom: 21px;
 }
 
-.contact-icon {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  margin-right: 10px;
-}
-
 .contact__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1496,6 +1480,12 @@ button,
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.contact-icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .footer {
@@ -1571,6 +1561,40 @@ button,
   margin-bottom: 0;
 }
 
+.is-open .overlay {
+  display: block;
+}
+
+.is-open svg {
+  color: #011c40;
+}
+
+.is-open .header__inner {
+  background-color: #f9fbfd;
+  padding-left: 14px;
+  padding-right: 15px;
+  margin-right: -15px;
+}
+
+.is-open.header {
+  padding-left: 22px;
+  margin-right: -15px;
+  background: rgba(0, 43, 102, 0.5);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.overlay {
+  display: none;
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: rgba(0, 43, 102, 0.5);
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1639,13 +1663,13 @@ button,
     padding-top: 27px;
   }
 
-  .logo--footer {
-    margin-right: 25px;
-  }
-
-  .logo svg {
+  .logo {
     width: 38px;
     height: 20px;
+  }
+
+  .logo--footer {
+    margin-right: 25px;
   }
 
   .menu {
@@ -1665,7 +1689,7 @@ button,
   }
 
   .menu--footer {
-    margin-bottom: 7px;
+    margin-bottom: 1px;
   }
 
   .menu--footer .menu__link {
@@ -1757,30 +1781,13 @@ button,
   }
 
   .features__item svg {
+    height: 26px;
+    width: auto;
     margin-bottom: 13px;
   }
 
   .features__item h3 {
     line-height: 140%;
-  }
-
-  .features__item--cruise-ship svg {
-    width: 21px;
-    height: 26px;
-  }
-
-  .features__item--all-inclusive svg {
-    width: 27px;
-    height: 26px;
-  }
-
-  .features__item--zodiac svg {
-    width: 36px;
-    height: 26px;
-  }
-
-  .features__item--zodiac h3 {
-    margin-bottom: 20px;
   }
 
   .cruises h2 {
@@ -1798,8 +1805,7 @@ button,
   }
 
   .card__preview h3 {
-    left: 35px;
-    bottom: 27px;
+    margin: auto 35px 27px;
   }
 
   .card__detail {
@@ -1904,11 +1910,7 @@ button,
   }
 
   .footer__inner {
-    padding-top: 49px;
-  }
-
-  .social {
-    margin-bottom: 2px;
+    padding-top: 47px;
   }
 
   .social__item {
@@ -1935,7 +1937,7 @@ button,
   }
 
   .form__desc {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
 }
 
@@ -1963,14 +1965,14 @@ button,
     padding-top: 20px;
   }
 
-  .logo--footer {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-
-  .logo svg {
+  .logo {
     width: 42px;
     height: 22px;
+  }
+
+  .logo--footer {
+    margin-right: 0;
+    margin-bottom: 22px;
   }
 
   .menu {
@@ -1989,13 +1991,15 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     background-color: #f9fbfd;
     position: absolute;
-    right: -15px;
+    right: 0;
     top: 100%;
-    width: calc(100% - 7px);
-    min-height: 100vh;
-    padding-top: 1px;
+    height: 100vh;
+    overflow-y: auto;
+    padding-top: 8px;
     padding-left: 25px;
     padding-right: 30px;
     padding-bottom: 30px;
@@ -2026,7 +2030,7 @@ button,
 
   .hamb {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
   }
 
   .intro {
@@ -2040,7 +2044,7 @@ button,
 }
 
   .intro__inner {
-    padding-top: 92px;
+    padding-top: 99px;
     padding-bottom: 178px;
   }
 
@@ -2086,7 +2090,7 @@ button,
 
   .features__inner {
     padding-top: 57px;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
   }
 
   .features h2 {
@@ -2101,32 +2105,16 @@ button,
   }
 
   .features__item {
+    min-height: 250px;
     padding: 25px 20px 21px 20px;
   }
 
   .features__item svg {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
   }
 
-  .features__item--cruise-ship svg {
-    margin-bottom: 15px;
-  }
-
-  .features__item--all-inclusive svg {
-    margin-bottom: 11px;
-  }
-
-  .features__item--all-inclusive h3 {
-    max-width: 140px;
-    margin-bottom: 11px;
-  }
-
-  .features__item--zodiac svg {
-    margin-bottom: 13px;
-  }
-
-  .features__item--zodiac h3 {
-    margin-bottom: 11px;
+  .features__item h3 {
+    margin-bottom: 10px;
   }
 
   .cruises h2 {
@@ -2147,8 +2135,7 @@ button,
   }
 
   .card__preview h3 {
-    left: 25px;
-    bottom: 17px;
+    margin: auto 25px 17px;
   }
 
   .card__detail {

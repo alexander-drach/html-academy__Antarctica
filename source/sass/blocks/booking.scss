@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../img/bg/booking-bg-desktop.png");
+  background-color: #d7e5f3;
 
   @supports (background-image: url("../img/bg/booking-bg-desktop.webp")) {
     background-image: url("../img/bg/booking-bg-desktop.webp");
