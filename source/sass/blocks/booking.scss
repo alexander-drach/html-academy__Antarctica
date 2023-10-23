@@ -82,6 +82,10 @@
   margin-right: 144px;
   margin-bottom: 7px;
 
+  @include vp-1279 {
+    margin-right: 50px;
+  }
+
   @include vp-1023 {
     display: flex;
     flex-direction: column;

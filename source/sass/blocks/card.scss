@@ -46,6 +46,10 @@
   background-color: $color-primary-blue;
 }
 
+.card__preview picture {
+  width: 100%;
+}
+
 .card__preview img {
   display: block;
   width: 100%;
