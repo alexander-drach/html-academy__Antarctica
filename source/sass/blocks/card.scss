@@ -81,6 +81,10 @@
 
   pointer-events: none;
 
+  @include vp-1279 {
+    padding: 28px 10px 10px 10px;
+  }
+
   @include vp-1023 {
     padding: 28px 34px 10px 35px;
   }

@@ -1663,6 +1663,10 @@ button,
 }
 
 @media (max-width: 1279px) {
+  .card__detail {
+    padding: 28px 10px 10px 10px;
+  }
+
   .booking__text {
     margin-right: 50px;
   }
